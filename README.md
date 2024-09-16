@@ -59,11 +59,11 @@ An LED is used to indicate the presence of a person in the room. It is turned on
 
 ### DC Motor Fan
 
-The DC motor fan provides cooling whe on the room temperature is between 25°C and 45°C. It is controlled based on the temperature readings from the DHT11 sensor.
+The DC motor fan provides cooling whe on the room temperature is between 25°C and 70°C. It is controlled based on the temperature readings from the DHT11 sensor.
 
 ### Buzzer
 
-The buzzer acts as a fire alarm, activated when the room temperature exceeds 45°C, indicating a potential fire hazard.
+The buzzer acts as a fire alarm, activated when the room temperature exceeds 70°C, indicating a potential fire hazard.
 
 Software Components
 
@@ -157,9 +157,9 @@ The ultrasonic sensor emits a burst of ultrasonic waves through the Trig pin. Wh
 
 The DHT11 sensor continuously monitors the room temperature. The Arduino processes this data to:
 
-- Turn on the fan if the temperature is between 25°C and 45°C.
+- Turn on the fan if the temperature is between 25°C and 70°C.
     
-- Activate the buzzer if the temperature exceeds 45°C, indicating a potential fire hazard.
+- Activate the buzzer if the temperature exceeds 70°C, indicating a potential fire hazard.
     
 
 ## Implementation and Testing
@@ -184,9 +184,9 @@ The DHT11 sensor continuously monitors the room temperature. The Arduino process
     
 2. LED: Ensure the LED turns on when the door is opened.
     
-3. DHT11 Sensor and Fan: Adjust the room temperature and verify that the fan turns on when the temperature is between 25°C and 45°C.
+3. DHT11 Sensor and Fan: Adjust the room temperature and verify that the fan turns on when the temperature is between 25°C and 70°C.
     
-4. Buzzer: Increase the temperature above 45°C and verify that the buzzer activates.
+4. Buzzer: Increase the temperature above 70°C and verify that the buzzer activates.
     
 
 ## Results
@@ -199,7 +199,7 @@ The smart home system successfully performs the following functions:
     
 - The fan operates within the specified temperature range.
     
-- The buzzer activates as a fire alarm when the temperature exceeds 45°C.
+- The buzzer activates as a fire alarm when the temperature exceeds 70°C.
     
 
   
