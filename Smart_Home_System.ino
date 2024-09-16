@@ -46,12 +46,12 @@ void loop()
         digitalWrite(led, HIGH);
         temp();
 
-        if (t > 45)
+        if (t > 70)
         {
             digitalWrite(buzzer, HIGH);
             digitalWrite(fan, LOW);
         }
-        else if (t > 25 && t < 45)
+        else if (t > 25 && t < 70)
         {
             digitalWrite(fan, HIGH);
         }
