@@ -15,7 +15,7 @@ The primary objectives of this project are:
     
 - To monitor room temperature using a DHT11 sensor and control a DC motor fan accordingly.
     
-- To activate a buzzer as a fire alarm if the temperature exceeds 45°C.
+- To activate a buzzer as a fire alarm if the temperature exceeds 70°C.
     
 
 ## System Overview
